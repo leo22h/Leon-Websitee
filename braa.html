@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>موقع الأصوات</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 40px;
+      margin: 0;
+      direction: rtl;
+    }
+
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: 100vh;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #ffcc00;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e6b800;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="buttons">
+      <button onclick="document.getElementById('sound1').play()">اضغط تسمع براء وهو بيتناك (بيدخل فيه جامد!)</button>
+    </div>
+  </div>
+
+  <!-- الصوت -->
+  <audio id="sound1" src="https://files.catbox.moe/uoif70.m4a"></audio>
+
+</body>
+</html>
